@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= utilisateur.UserName
+  h5 Written by #{author}
+  hr
+  if user
+    if user.id == utilisateur.author
+      a.btn.btn-default(href='/utilisateur/edit/'+utilisateur._id) Edit
+      a.btn.btn-danger.delete-utilisateur(href='#',data-id=utilisateur._id) Delete

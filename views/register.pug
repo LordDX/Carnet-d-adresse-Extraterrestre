@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 Register
+  form(method='POST', action='/users/register')
+    #form-group
+      label age:
+      input.form-control(name='age', type='number')
+    #form-group
+      label family:
+      input.form-control(name='family', type='text')
+    #form-group
+      label food:
+      input.form-control(name='food', type='text')
+    #form-group
+      label race:
+      input.form-control(name='race', type='text')
+    #form-group
+      label Username:
+      input.form-control(name='username',type='text')
+    #form-group
+      label Password:
+      input.form-control(name='password',type='password')
+    #form-group
+      label Confirm:
+      input.form-control(name='password2',type='password')
+    br
+    input.btn.btn-primary(type='submit',value='Submit')
